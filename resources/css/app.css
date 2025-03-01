@@ -1,0 +1,226 @@
+/* Style gÃ©nÃ©ral de la table */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* En-tÃªte de la table */
+  .table thead {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+
+  .table thead th {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* RangÃ©es du corps */
+  .table tbody tr {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Couleur alternÃ©e */
+  }
+
+  .table tbody tr:hover {
+    background-color: #e2e6ea; /* Couleur au survol */
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .table td {
+    padding: 10px 15px;
+  }
+
+  /* Boutons */
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn-success:hover {
+    background-color: #218838;
+  }
+
+  /* Conteneur */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding:Â 20px;
+  }
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* ----------------------------------- header ---------------------------------------------- */
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* Styling for the first menu */
+  .menu1 {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .menu1 .div1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu1 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .menu1 a:hover {
+    background-color: #555;
+  }
+
+  /* Styling for the second menu with page content */
+  .menu2 {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Links and buttons */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Layout for the entire page */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /*AJOUTER---------------------- */
+  /* Styling for the form container */
+  .Div1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styling for the title */
+  h1 {
+    text-align: center;
+    color: #663399; /* Violet color for the title */
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the input fields container */
+  .Div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+  }
+
+  /* Styling for each input field */
+  .Div2 input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  /* Label styling */
+  .Div2 label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  /* Button styling */
+  .Div2 button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  }
+
+  /* Button hover effect */
+  /*.Div2 button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+
+  /* Disabled button styling */
+  .Div2 button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
