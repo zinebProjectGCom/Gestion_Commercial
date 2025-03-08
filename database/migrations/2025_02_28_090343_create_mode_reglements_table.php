@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-       
+
 
         Schema::create('mode_reglements', function (Blueprint $table) {
-            $table->bigIncrements('a_id');
+            $table->id();
             $table->string('mode_reglements');
             $table->timestamps();
         });
 
-     
+
     }
 
     /**
