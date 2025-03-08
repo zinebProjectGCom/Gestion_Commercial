@@ -14,7 +14,7 @@ return new class extends Migration
        
 
         Schema::create('mode_reglements', function (Blueprint $table) {
-            $table->bigIncrements('a_id');
+            $table->id();
             $table->string('mode_reglements');
             $table->timestamps();
         });

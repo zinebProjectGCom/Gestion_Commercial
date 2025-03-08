@@ -1,5 +1,7 @@
 <?php
-
+use App\Http\Controllers\FamilleController;
+use App\Http\Controllers\ProduitController;
+use App\Http\Controllers\SousFamilleController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ModeReglementController;
 use Illuminate\Support\Facades\Route;
@@ -18,3 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('modes', ModeReglementController::class);
+
+## les route familles , sousFamilles , produits
+Route::resource("familles",FamilleController::class);
+Route::resource("sousFamilles",SousFamilleController::class);
+Route::resource("produits",ProduitController::class);
