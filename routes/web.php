@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('modes', ModeReglementController::class);
+
 
 ## les route familles , sousFamilles , produits
 Route::resource("familles",FamilleController::class);
