@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ModeRegelement;
-use GrahamCampbell\ResultType\Success;
 use Illuminate\Http\Request;
+use App\Models\ModeReglement;
 
 class ModeReglementController extends Controller
 {
@@ -13,8 +12,8 @@ class ModeReglementController extends Controller
      */
     public function index()
     {
-        $modes = ModeRegelement::all();
-        return view('modes.index', compact('modes'));
+        $modeReglements = ModeReglement::all();
+        return view('mode_reglements.index', compact('modeReglements'));
     }
 
     /**
@@ -22,7 +21,7 @@ class ModeReglementController extends Controller
      */
     public function create()
     {
-        return view('modes.create');
+        return view('mode_reglements.create');
     }
 
     /**
@@ -30,43 +29,62 @@ class ModeReglementController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate(['mode_reglements' =>'required|string|max:255',]);
-        ModeRegelement::create($request->all());
-        return redirect()->with('success', 'Mode de réglement crée avec succés.');
+        // Validate the input
+        $request->validate([
+            'mode_reglements' => 'required|string|max:255', 
+        ]);
+        ModeReglement::create($request->all());
+        // Redirect with success message
+        return redirect()->route('mode_reglements.index')->with('success', 'ModeReglement created successfully.');
     }
+    
 
     /**
      * Display the specified resource.
      */
-    public function show(ModeRegelement $mode)
+    public function show(string $id)
     {
-        return view('modes.show', compact('mode'));
+        $modeReglement = ModeReglement::findOrFail($id);
+        return view('mode_reglements.show', compact('modeReglement'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ModeRegelement $mode)
+    public function edit(string $id)
     {
-        return view('modes.edit', compact('mode'));
+        $modeReglement = ModeReglement::findOrFail($id);
+        return view('mode_reglements.edit', compact('modeReglement'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ModeRegelement $mode)
+    public function update(Request $request, string $id)
     {
-        $request->validate(['mode_reglements' => 'required|string|max:255',]);
-        $mode->update($request->all());
-        return redirect()->route('modes.index')->with('success', 'Mode de réglement mis à jour avec succés.');
+        // Validate the input
+        $request->validate([
+            'mode_reglements' => 'required|string|max:255', // Validate the 'mode_reglements' field
+        ]);
+
+        // Find the mode_reglement by ID and update it
+        $modeReglement = ModeReglement::findOrFail($id);
+        $modeReglement->update($request->all());
+
+        // Redirect with success message
+        return redirect()->route('mode_reglements.index')->with('success', 'ModeReglement updated successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ModeRegelement $mode)
+    public function destroy(string $id)
     {
-        $mode->delete();
-        return redirect()->route('modes.index')->with('succes', 'Modes de réglement supprimé avec succés.');
+        // Find the mode_reglement by ID and delete it
+        $modeReglement = ModeReglement::findOrFail($id);
+        $modeReglement->delete();
+
+        // Redirect with success message
+        return redirect()->route('mode_reglements.index')->with('success', 'ModeReglement deleted successfully.');
     }
 }
