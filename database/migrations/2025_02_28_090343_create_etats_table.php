@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('etats', function (Blueprint $table) {
             $table->id();
-            $table->string('etat');
+            $table->string('nom');
             $table->timestamps();
         });
 
@@ -27,3 +27,4 @@ return new class extends Migration
         Schema::dropIfExists('etats');
     }
 };
+

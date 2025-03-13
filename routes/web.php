@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EtatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+/*
+Route::get('/etats',[EtatController::class,'index'])->name('etats.index');
+return redirect()->route('etats.index');
+*/
+/*
+route::get('/etats/{id}',[EtatController::class,'index'])->name('etats.index');
+route::get('/etats/{id}',[EtatController::class,'create'])->name('etats.create');
+route::get('/etats/{id}',[EtatController::class,'store'])->name('etats.store');
+*/
+Route::resource('etats',EtatController::class);
+
