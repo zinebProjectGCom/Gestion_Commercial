@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-       
+
 
         Schema::create('mode_reglements', function (Blueprint $table) {
             $table->id();
@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-     
+
     }
 
     /**
