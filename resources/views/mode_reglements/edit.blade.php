@@ -11,6 +11,6 @@
             <input type="text" name="mode_reglements" id="mode_reglements" class="form-control"
                 value="{{ $modeReglement->mode_reglements }}" required>
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>
 @endsection

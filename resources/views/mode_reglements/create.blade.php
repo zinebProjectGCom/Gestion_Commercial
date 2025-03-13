@@ -9,6 +9,6 @@
             <label for="mode_reglements">Mode Reglement</label>
             <input type="text" name="mode_reglements" id="mode_reglements" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
     </form>
 @endsection
