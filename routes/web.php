@@ -15,7 +15,7 @@ use App\Http\Controllers\EtatController;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
 /*
 Route::get('/etats',[EtatController::class,'index'])->name('etats.index');
