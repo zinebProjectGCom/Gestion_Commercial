@@ -3,9 +3,18 @@
 
 
 
+
+
+use App\Http\Controllers\FamilleController;
+use App\Http\Controllers\ProduitController;
+use App\Http\Controllers\SousFamilleController;
+use App\Http\Controllers\ModeReglementController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MarqueController;
 use App\Http\Controllers\UniteController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +32,17 @@ use App\Http\Controllers\UniteController;
 Route::resource('marques', MarqueController::class);
 
 Route::resource('unites', UniteController::class);
-    
-   
+
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::resource('mode_reglements', ModeReglementController::class);
+## les route familles , sousFamilles , produits
+Route::resource("familles",FamilleController::class);
+Route::resource("sousFamilles",SousFamilleController::class);
+Route::resource("produits",ProduitController::class);
+
+
