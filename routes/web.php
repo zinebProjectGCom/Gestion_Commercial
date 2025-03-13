@@ -1,7 +1,11 @@
 <?php
 
-use App\Http\Controllers\ArticleController;
+
+
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MarqueController;
+use App\Http\Controllers\UniteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+
+Route::resource('marques', MarqueController::class);
+
+Route::resource('unites', UniteController::class);
+    
+   
