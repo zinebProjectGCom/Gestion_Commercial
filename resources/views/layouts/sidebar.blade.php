@@ -16,6 +16,9 @@
         Home
       </a>
     </li>
+
+
+
     <li>
       <a href="#" class="nav-link text-white">
         <i class="bi bi-speedometer2"></i>
@@ -26,6 +29,17 @@
       </a>
     </li>
     <li><a class="nav-link text-white" href="{{ route('etats.index') }}">Gestion des États</a></li>
+    <li>
+     <a href="{{route('mode_reglements.index')}}" class="nav-link text-white">
+        <i class="bi bi-credit-card"></i>
+        <svg class="bi me-2" width="5" height="5">
+          <use xlink:href="#speedometer2"></use>
+        </svg>
+        ModeReglement
+      </a>
+     </li>
+     
+
     <li>
       <a href="{{route('familles.index')}}" class="nav-link text-white">
         <i class="far fa-newspaper"></i>
@@ -51,6 +65,7 @@
           <use xlink:href="#speedometer2"></use>
         </svg>
         Produits
+
       </a>
     </li>
     <li>
@@ -83,7 +98,9 @@
   </ul>
   <hr>
   <div class="dropdown">
+
     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+
       <strong>user</strong>
     </a>
     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
