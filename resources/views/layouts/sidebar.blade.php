@@ -16,9 +16,9 @@
         Home
       </a>
     </li>
-    
-   
-  
+
+
+
     <li>
       <a href="#" class="nav-link text-white">
         <i class="bi bi-speedometer2"></i>
@@ -37,6 +37,7 @@
         ModeReglement
       </a>
      </li>
+     
 
     <li>
       <a href="{{route('familles.index')}}" class="nav-link text-white">
