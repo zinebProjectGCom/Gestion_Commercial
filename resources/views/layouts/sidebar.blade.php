@@ -25,6 +25,7 @@
         Dashboard
       </a>
     </li>
+    <li><a class="nav-link text-white" href="{{ route('etats.index') }}">Gestion des États</a></li>
     <li>
       <a href="{{route('familles.index')}}" class="nav-link text-white">
         <i class="far fa-newspaper"></i>
