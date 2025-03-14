@@ -17,7 +17,7 @@
       </a>
     </li>
     <li>
-      <a href="#" class="nav-link text-white">
+    <a href="{{route('mode_reglements.index')}}" class="nav-link text-white">
         <i class="bi bi-credit-card"></i>
         <svg class="bi me-2" width="5" height="5">
           <use xlink:href="#speedometer2"></use>
