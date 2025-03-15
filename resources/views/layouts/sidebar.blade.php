@@ -1,4 +1,5 @@
 <div class="d-flex flex-column p-3 text-white h-100 justify-content-between" style="background-color: #1c2331">
+<<<<<<< Updated upstream
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
     <svg class="bi me-2" width="40" height="32">
       <use xlink:href="#bootstrap"></use>
@@ -14,6 +15,69 @@
           <use xlink:href="#home"></use>
         </svg>
         Home
+=======
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Menu</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">
+            <i class="bi bi-house"></i>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="{{route('marques.index')}}" class="nav-link text-white">>
+          <i class="fas fa-cog"></i>
+          <svg class="bi me-2" width="16" height="16">
+            <use xlink:href="#speedometer2"></use></svg>
+          marques
+        </a>
+      </li>
+      <li>
+        <a href="{{route('unites.index')}}" class="nav-link text-white">>
+           <i class="fas fa-tachometer-alt me-2"></i>
+            <svg class="bi me-2" width="16" height="16">
+              <use xlink:href="#speedometer2"></use></svg>
+          unites
+        </a>
+      <li>
+        <a href="#" class="nav-link text-white">
+            <i class="bi bi-speedometer2"></i>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+            <i class="bi bi-table"></i>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+            <i class="bi bi-grid"></i>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+            <i class="bi bi-person-circle"></i>
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+          Customers
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+        <strong>user</strong>
+>>>>>>> Stashed changes
       </a>
     </li>
 
